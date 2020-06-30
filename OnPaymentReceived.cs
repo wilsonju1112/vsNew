@@ -22,7 +22,7 @@ namespace azFunctionDemo
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             dynamic data = JsonConvert.DeserializeObject(requestBody);
 
-            return new OkObjectResult($"Thank you for your purchase");
+            return new OkObjectResult($"Thank you for your purchase!");
         }
     }
 }
